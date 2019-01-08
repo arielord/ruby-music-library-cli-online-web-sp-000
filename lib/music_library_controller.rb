@@ -91,7 +91,9 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets
     
-    puts "Playing #{} by #{}"
+    list = @songs.sort_by {|song| song.name}
+    
+    puts "Playing #{list[input-1]} by #{list[input-1]}"
   end
 
 end
