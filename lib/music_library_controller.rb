@@ -7,6 +7,7 @@ class MusicLibraryController
     self.path = path
     @music = MusicImporter.new(self.path)
     @songs = @music.import
+    
   end
   
   def call
@@ -24,6 +25,7 @@ class MusicLibraryController
     
     until name == "exit" do
       name = gets
+      
     end
   end
   
