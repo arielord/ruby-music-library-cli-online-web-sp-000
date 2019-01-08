@@ -92,9 +92,9 @@ class MusicLibraryController
     input = gets
     
     list = self.list_songs
-    if list.find {|song| song}
-    
-    puts "Playing #{list[input.to_i-1].name} by #{list[input.to_i-1].artist.name}"
+    if list.size <= input.to_i
+      puts "Playing #{list[input.to_i-1].name} by #{list[input.to_i-1].artist.name}"
+    end
   end
 
 end
