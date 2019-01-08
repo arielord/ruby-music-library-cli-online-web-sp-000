@@ -25,7 +25,7 @@ class MusicLibraryController
     
     until name == "exit" do
       name = gets
-      
+      self.send(name)
     end
   end
   
