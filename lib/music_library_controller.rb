@@ -92,9 +92,6 @@ class MusicLibraryController
     input = gets
     
     list = self.list_songs
-    if list.size <= input.to_i && input.to_i > 0
-      
-    end
   end
 
 end
