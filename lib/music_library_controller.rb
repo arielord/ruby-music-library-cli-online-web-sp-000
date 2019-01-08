@@ -91,7 +91,6 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.to_i
     
-    if input
     #list = self.list_songs
     #puts "Playing #{list[input.to_i-1].name} by #{list[input.to_i-1].artist.name}"
   end
